@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Product Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Product Name</h1>
+    </header>
+
+    <main>
+        <div class="product-container">
+            <!-- Product Images Section -->
+            <div class="product-images">
+                <img src="https://via.placeholder.com/300" alt="Product Image" id="main-image">
+                <div class="thumbnails">
+                    <img src="https://via.placeholder.com/100" alt="Thumbnail" onclick="changeImage(this)">
+                    <img src="https://via.placeholder.com/100" alt="Thumbnail" onclick="changeImage(this)">
+                    <img src="https://via.placeholder.com/100" alt="Thumbnail" onclick="changeImage(this)">
+                </div>
+            </div>
+
+            <!-- Product Details Section -->
+            <div class="product-details">
+                <h2>Product Title</h2>
+                <p class="price">$49.99</p>
+                <p class="description">This is a short description of the product. It's stylish, affordable, and available in multiple colors.</p>
+                <label for="size">Choose Size:</label>
+                <select id="size">
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                </select>
+
+                <button id="add-to-cart">Add to Cart</button>
+                <p id="cart-message" class="hidden">Item added to cart!</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
